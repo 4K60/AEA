@@ -1,0 +1,103 @@
+.title {
+  margin: 0px;
+  animation-name: fadein1;
+  animation-duration: 0.5s;
+}
+
+.subtitle {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: hsl(0, 0%, 50%);
+  animation-name: fadein2;
+  animation-duration: 1s;
+  font-family: GmarketSansLight;
+}
+
+.main {
+  animation-name: fadein3;
+  animation-duration: 1.5s;
+}
+
+.popup {
+  color: white;
+  background: linear-gradient(to right, rgb(72, 63 ,85), rgb(94, 89, 99), rgb(72, 63 ,85));
+  padding: 10px 50px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 0px;
+  transition: all 0.2s;
+  font-family: GmarketSansLight;
+  font-size: 18px;
+}
+
+.popup:hover {
+  transform: scale(105%);
+}
+
+.popup:active {
+  transform: scale(95%);
+}
+
+.noteimg {
+  margin: 15px;
+  width: 360px;
+}
+
+body {
+  text-align: center;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px;
+  color: hsl(0, 0%, 70%);
+  margin: 8px 0px 16px;
+  animation-name: hr;
+  animation-duration: 1s;
+}
+
+p {
+  font-family: GmarketSansMedium;
+}
+
+strong {
+  font-size: 1.2em;
+}
+
+@keyframes fadein1 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadein2 {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadein3 {
+  0% {opacity: 0;}
+  67% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes hr {
+  0% {margin: 8px 640px 16px; opacity: 0;}
+  50% {margin: 8px 640px 16px; opacity: 0;}
+  100% {margin: 8px 0px 16px; opacity: 1;}
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
